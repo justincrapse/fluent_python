@@ -7,7 +7,7 @@ class Vector:
         self.x = x
         self.y = y
 
-    def __repr__(self):  # built in for string representation
+    def __repr__(self):  # built-in for string representation
         return f'Vector({self.x}, {self.y})'
 
     def __abs__(self):
@@ -28,4 +28,4 @@ class Vector:
 if __name__ == '__main__':
     v1 = Vector(3, 4)
     print(abs(v1))
-    print(str(v1) + 'haha')
+    print(str(v1) + ' haha')
