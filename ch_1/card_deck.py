@@ -26,9 +26,9 @@ def spades_high(card):
 
 if __name__ == "__main__":
     deck = FrenchDeck()
-    to_print = f'randome card: {choice(deck)}'
-    print(to_print)
+    print(f'randome card: {choice(deck)}')
+
     for card in sorted(deck, key=spades_high):
         print(card)
-    to_print = Card('Q', 'hearts') in deck
-    print(to_print)
+
+    print(to_print = Card('Q', 'hearts') in deck)
