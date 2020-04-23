@@ -1,0 +1,2 @@
+Always use the unicode sandwitch and always explicitly open the file with a specified encoding:
+open(' cafe.txt', 'w', encoding =' utf_8'). write(' café')
