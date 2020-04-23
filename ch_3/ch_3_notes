@@ -1,0 +1,6 @@
+Keys must be hashable objects An object is hashable if all of these requirements are met: It supports the hash() 
+function via a __hash__() method that always returns the same value over the lifetime of the object. It supports 
+equality via an __eq__() method. If a = = b is True then hash( a) = = hash( b) must also be True. User-defined types
+are hashable by default because their hash value is their id() and they all compare not equal.
+
+Ramalho, Luciano. Fluent Python: Clear, Concise, and Effective Programming (p. 95). O'Reilly Media. Kindle Edition. 
