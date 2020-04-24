@@ -1,0 +1,12 @@
+Functions in Python are first-class objects. Programming language theorists define a “first-class object” as a program
+entity that can be:
+Created at runtime
+Assigned to a variable or element in a data structure
+Passed as an argument to a function
+Returned as the result of a function
+
+Higher-Order Functions:
+A function that takes a function as argument or returns a function as the result is a higher-order function.
+
+user-defined functions have many attributes including a dict, name, and globals. Do a set diff between your function
+"func" and the obj object to see: sorted( set( dir( func)) - set( dir( obj)))
