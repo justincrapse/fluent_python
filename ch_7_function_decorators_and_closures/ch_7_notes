@@ -1,0 +1,9 @@
+Decorated methods will run the decorator(decorated_func) at import time before anything is called because the decorated
+syntax is syntactic sugar for an explicit call.
+
+import time is the code running the the module at import or __name__ == '__main__'. Runtime is when the code is actually
+executed/called.
+
+Closures - A function with an extended scope that encompasses nonglobal variables referenced in teh body of the function
+but not defined there. 
+
