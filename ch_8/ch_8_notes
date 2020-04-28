@@ -1,0 +1,11 @@
+is vs ==: is compares identity (id(object)) where == compares value, but depends on __eq__ implementation
+
+default mutable objects as prameters (my_list=[]) - The problem is that all invocations of this function that do not
+pass in a list will share this same default list (function.__defaults__), which is created at import time. Calls/classes
+that call it with a value will behave as expected.
+
+passed by reference vs. passed by value - Lists are passed by reference, so anything done to those original lists in the
+function/class will be reflected by the list passed in. You need to make copies to avoid this (shallow or deep.) This
+could easily be done with list(iterable) to accept any iterable and make a copy of it, passed by reference or value.
+
+Class instance awareness - Use WeakSet. strong references would keep the instances from being garbage collected.
