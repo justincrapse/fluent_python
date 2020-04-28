@@ -5,5 +5,13 @@ import time is the code running the the module at import or __name__ == '__main_
 executed/called.
 
 Closures - A function with an extended scope that encompasses nonglobal variables referenced in teh body of the function
-but not defined there. 
+but not defined there.
 
+@singledispatch decorator (functools) - This can do something very similar to method overloading (handle different
+types of input (int, tuple, str) for the function, like a different function signature like in Java.)
+
+"Graham Dumpleton and Lennart Regebro — one of this book’s technical reviewers — argue that decorators are best coded as
+classes implementing __call__, and not as functions like the examples in this chapter. I agree that approach is better
+for non-trivial decorators, but to explain the basic idea of this language feature, functions are easier to understand."
+
+https://github.com/GrahamDumpleton/wrapt/blob/develop/blog/README.md

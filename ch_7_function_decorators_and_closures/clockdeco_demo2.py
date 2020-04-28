@@ -20,3 +20,4 @@ if __name__ == '__main__':
     print(snooze.__name__)  # will now also return its own name.
     print('*' * 40, 'calling factorial(6)')
     print('6! =', factorial(6))
+
