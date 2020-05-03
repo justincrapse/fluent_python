@@ -1,0 +1,23 @@
+Monkey Patching: changing a class or module at runtime, without touching the source code:
+FrenchDeck.__setitem__ = set_cards  # set_cards being a function for setting the card items in a deck.
+
+isinstance() - Do not use isinstance() with if/elif/elif blocks. this is code smell. Better to use polymorphism and
+dispatch for maintainable code for handling different types passed into a given parameter. One exception to this is
+that it is common for an API to accept a str or a list of strings, so checking for isinstance() for a str and then
+wrapping that into a list of strings if it is just a string is recommended.
+
+ABCs - Readers (of this book) most likely don't need to write any new ABCs, just use existing ones correctly, to get
+99.9% of the benefits without serious risk of misdesign.
+
+Abstract methods - These can have implementation in the parent ABC, but still must be overridden. A call to super() can
+be used to add to functionality instead of implementing it from scratch.
+
+@abstractmethod - must appear right above the method definition when stacking multiple decorator methods.
+
+Strong versus weak typing: rarely performs implicit type conversion = strongly typed (python, Java, C++)
+weakly typed: often performs implicit conversion (php, javascript, perl)
+
+Static vs Dynamic typing: type-checking at compile time = statically typed. Python uses some of both.
+
+Monkey patching - Ruby and JavaScript let you monkey-patch the built-ins, Python does not.
+
