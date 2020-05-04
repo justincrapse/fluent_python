@@ -1,0 +1,13 @@
+If you want to extend the Python built-ins with custom classes, Do not do this with the actual built-ins. This will
+cause huge problems with the method resolution order because the built-ins have C implementations that do not
+handle python user-defined classes method resolution order as expected. Instead, you must extend from the collections
+module and use UserList, UserString, and UserDict etc.
+
+MRO for multiple inheritance:
+class A:
+class B(A):
+class C(A):
+class D(B, C)
+method resolution: (D, B, C, A)
+
+Favor composition over inheritance.
