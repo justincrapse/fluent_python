@@ -1,0 +1,7 @@
+Operator overloading - Python does not let you overload the built-in types operator special methods. This would cause
+a lot of confusion with unexpected behavior. Also, overloading is limited to existing operators, except for a few (is,
+and, or, not. [though &, |, ! can be].)
+
+NotImplemented special value - this will allow the interpreter to try again by swapping the operands and calling the
+reverse special method for that operator (e.g., __radd__)
+

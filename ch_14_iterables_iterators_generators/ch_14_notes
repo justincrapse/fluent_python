@@ -1,0 +1,15 @@
+__getitem__ - this is an extreme form of duck typing: an object is considered iterable not only when it implements the
+special method __iter__, but also when it implements __getitem__, as long as __getitem__ accepts int keys starting from
+0. __getitem__ may be deprecated in the future. This just exists for backward compatibility.
+
+Checking for iterable type: iter(x) is better than isinstance(x, abc.Iterable) because it considers the legacy support
+of __getitem__ acting as a legitimate iterator. Use iter(x) and handle the TypeError instead. Also, no need to check
+this if you are just going to iterate over it, which can be put in a try block itself, unless this is something you want
+to check early to make sure it is ready for whatever it may be used for later on.
+
+iterator - any object implementing __next__ (no arguments) and __iter__
+
+iterable - this needs to return an iterator, so it must have the __iter__ method, but not the __next__ special method
+this is the iterator pattern
+
+Genexp as paramater - No need for extra parenthesis, unless you plan on including more values after the genexp. 
