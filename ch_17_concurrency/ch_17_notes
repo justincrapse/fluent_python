@@ -1,0 +1,5 @@
+concurrent.futures.ThreadPoolExecutor vs. concurrent.futures.ProcessPoolExecutor - The first is for I/O-bound processes
+The latter is for cpu-bound processes and is truly multi-threaded.
+
+Error handling for I/O, especially with the requests package, is well documented in this chapter and in the appendix
+examples for flags2 for this chapter.
