@@ -1,6 +1,6 @@
 from concurrent import futures
 
-from ch_17_concurrency.flags import save_flag, get_flag, show, main
+from ch_17_concurrency_futures.flags import save_flag, get_flag, show, main
 
 MAX_WORKERS = 20
 
